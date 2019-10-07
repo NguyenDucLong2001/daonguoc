@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>long</title>
+</head>
+<body>
+    <script>
+    let long = [-3,5,1,3,2,10];
+    let first = 0;
+    let last = long.length - 1;
+    while (first < last) {
+        let b = long[first];
+        long[first] = long[last];
+        long[last] = b;
+        first++;
+        last--;
+    }
+    document.write(long);
+</script>
+</body>
+</html>
